@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.9'
+gem 'rails', '3.2.11'
 gem 'bootstrap-sass', '2.1'
+gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
 	gem 'rspec-rails', '2.11.0'
@@ -25,4 +26,8 @@ group :test do
   	gem 'libnotify', '0.5.9'
 end
 
-	gem 'pg', '0.12.2'
+gem 'pg', '0.12.2'
+
+group :development do
+	gem 'annotate', '2.5.0'
+end
